@@ -7,7 +7,7 @@ public class GroundChecker : MonoBehaviour, ILogFunctionality
     [SerializeField] private BoxCollider2D m_overlapBox;
     [SerializeField] private LayerMask m_GroundMask;
 
-    private bool m_Grounded;
+   [SerializeField] private bool m_Grounded;
     public bool Grounded
     {
         get => m_Grounded;

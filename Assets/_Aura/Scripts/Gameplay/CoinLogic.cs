@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class CoinLogic : PickupBase
 {
-
-
+    
     public override void Handle_Pickup()
     {
-       Destroy(gameObject,1f);
+       Destroy(gameObject,m_TimeToDestruction);
     }
 }

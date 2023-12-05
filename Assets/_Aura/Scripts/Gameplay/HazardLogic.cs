@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class HazardLogic : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private HazardType m_HazardType;
+
+    [Tooltip("Amount of damage dealt when touched")][SerializeField] 
+    private float m_DamagePoints;
+    public float DamagePoints
     {
-        
+        get => m_DamagePoints;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void HandleCollision()
     {
-        
+        //ToDo:perhaps play got hit animation here or something
     }
+}
+public enum HazardType
+{
+    ThreeSpike
 }
